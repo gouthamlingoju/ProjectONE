@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./styles.css"; // Import CSS file here
+import "./App.css"; // Import CSS file here
 import * as XLSX from "xlsx";
 document.addEventListener("DOMContentLoaded", () => {
   const certificateForm = document.getElementById("certificateForm");
