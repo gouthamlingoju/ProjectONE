@@ -4,7 +4,6 @@ function App() {
   return (
     <div>
       <ImageToExcelConverter />
-      <h1>HI</h1>
     </div>
   )
 }
