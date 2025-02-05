@@ -38,6 +38,7 @@ const ImageToExcelConverter = () => {
     setError(null);
 
     try {
+      console.log("Converting....");
       const formData = new FormData();
       selectedFiles.forEach(file => {
         formData.append('files', file);
@@ -47,7 +48,7 @@ const ImageToExcelConverter = () => {
         method: 'POST',
         body: formData,
       });
-
+      console.log(response);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

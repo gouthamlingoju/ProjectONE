@@ -1,0 +1,215 @@
+:root {
+    --primary: hsl(215, 60%, 25%);
+    --primary-light: hsl(215, 60%, 35%);
+    --background: #ffffff;
+    --text: #333333;
+    --muted: #666666;
+    --border: #e2e8f0;
+    --radius: 0.5rem;
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--background);
+  }
+  
+  .header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  
+  .logo-title h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .logo-title {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center;
+    text-align: center; /* Center the text */
+  }
+  
+  .logo {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Add space between logo and title */
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Space between title and subtitle */
+  }
+  
+  .subtitle {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    font-weight: 400; /* Slightly lighter weight for subtitle */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+  }
+  
+  .file-info {
+    font-size: 0.875rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-light);
+  }
+  
+  .btn-secondary {
+    background: white;
+    border: 1px solid var(--border);
+  }
+  
+  .btn-secondary:hover {
+    background: #f8f9fa;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .certificate-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .card-content dt {
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  
+  .card-content dd {
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.875rem;
+    margin-top: 2rem;
+  }
+  
+  .toast {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  .toast.show {
+    display: block;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
