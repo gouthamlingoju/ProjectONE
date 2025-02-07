@@ -14,7 +14,19 @@
 .header p {
   font-size: 0.875rem;
 }
+.logo-title {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center;
+  text-align: center; /* Center the text */
+}
 
+.logo {
+  width: 50px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1rem; /* Add space between logo and title */
+}
 .card {
   background-color: white;
   border-radius: 8px;
@@ -109,4 +121,12 @@
 .status-completed {
   background-color: #d1fae5;
   color: #065f46;
+}
+.footer {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: 2rem;
 }
