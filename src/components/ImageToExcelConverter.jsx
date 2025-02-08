@@ -91,7 +91,7 @@ const ImageToExcelConverter = () => {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <div className="mb-8">
-        <h1 className="mt-3 mb-5 text-red-500 text-center hh">Certificate to Excel Converter</h1>
+        <h1 className="mt-3 mb-5 text-center underline ">Certificate to Excel Converter</h1>
 
         {error && (
           <div className="mb-4 p-3 bg-red-100 text-red-700 rounded">
@@ -112,9 +112,13 @@ const ImageToExcelConverter = () => {
             htmlFor="file-upload"
             className="cursor-pointer flex flex-col items-center"
           >
-            <Upload className="w-12 h-12 text-gray-400 mb-2" />
-            <span className="text-gray-600">Click to upload certificate images or drag and drop</span>
-            <span className="text-sm text-gray-500 mt-2">Supported formats: JPG, PNG</span>
+            <div className='d-flex'>
+              <Upload className="w-12 h-12 text-gray-400 mb-2" />
+              <div className='d-flex'>
+                <span className="text-gray-600">Click to upload certificate images or drag and drop</span>
+                <span className=" text-gray-500 mt-2">Supported formats: JPG, PNG</span>
+              </div>
+            </div>
           </label>
         </div>
 
