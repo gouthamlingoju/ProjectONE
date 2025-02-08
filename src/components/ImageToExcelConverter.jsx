@@ -91,7 +91,7 @@ const ImageToExcelConverter = () => {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <div className="mb-8">
-        <h1 className="mt-3 mb-5 text-dangr text-center hh">Certificate to Excel Converter</h1>
+        <h1 className="mt-3 mb-5 text-red-500 text-center hh">Certificate to Excel Converter</h1>
 
         {error && (
           <div className="mb-4 p-3 bg-red-100 text-red-700 rounded">
